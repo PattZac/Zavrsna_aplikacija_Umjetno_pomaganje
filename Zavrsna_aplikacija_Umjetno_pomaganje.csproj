@@ -46,16 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dogadaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogadaje.Designer.cs">
+      <DependentUpon>Dogadaje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Komisije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Komisije.Designer.cs">
+      <DependentUpon>Komisije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnosDogadaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosDogadaje.Designer.cs">
+      <DependentUpon>UnosDogadaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnosKomisije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosKomisije.Designer.cs">
+      <DependentUpon>UnosKomisije.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dogadaje.resx">
+      <DependentUpon>Dogadaje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Komisije.resx">
+      <DependentUpon>Komisije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnosDogadaje.resx">
+      <DependentUpon>UnosDogadaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnosKomisije.resx">
+      <DependentUpon>UnosKomisije.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
