@@ -58,17 +58,47 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ideje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ideje.Designer.cs">
+      <DependentUpon>Ideje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IspisIdeju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IspisIdeju.Designer.cs">
+      <DependentUpon>IspisIdeju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Izazovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Izazovi.Designer.cs">
+      <DependentUpon>Izazovi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Komisije.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Komisije.Designer.cs">
       <DependentUpon>Komisije.cs</DependentUpon>
     </Compile>
+    <Compile Include="Korisnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korisnik.Designer.cs">
+      <DependentUpon>Korisnik.cs</DependentUpon>
+    </Compile>
     <Compile Include="UnosDogadaje.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UnosDogadaje.Designer.cs">
       <DependentUpon>UnosDogadaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnosIzazovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnosIzazovi.Designer.cs">
+      <DependentUpon>UnosIzazovi.cs</DependentUpon>
     </Compile>
     <Compile Include="UnosKomisije.cs">
       <SubType>Form</SubType>
@@ -84,11 +114,26 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ideje.resx">
+      <DependentUpon>Ideje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IspisIdeju.resx">
+      <DependentUpon>IspisIdeju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Izazovi.resx">
+      <DependentUpon>Izazovi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Komisije.resx">
       <DependentUpon>Komisije.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Korisnik.resx">
+      <DependentUpon>Korisnik.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UnosDogadaje.resx">
       <DependentUpon>UnosDogadaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnosIzazovi.resx">
+      <DependentUpon>UnosIzazovi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnosKomisije.resx">
       <DependentUpon>UnosKomisije.cs</DependentUpon>

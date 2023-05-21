@@ -47,42 +47,50 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             // labelWelcome
             // 
             this.labelWelcome.AutoSize = true;
-            this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelWelcome.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.labelWelcome.Location = new System.Drawing.Point(12, 9);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(370, 51);
+            this.labelWelcome.Size = new System.Drawing.Size(387, 51);
             this.labelWelcome.TabIndex = 0;
             this.labelWelcome.Text = "Dobrodošli nazad!";
             // 
             // bntDogadaje
             // 
+            this.bntDogadaje.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntDogadaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntDogadaje.Location = new System.Drawing.Point(64, 185);
             this.bntDogadaje.Name = "bntDogadaje";
             this.bntDogadaje.Size = new System.Drawing.Size(241, 41);
             this.bntDogadaje.TabIndex = 2;
             this.bntDogadaje.Text = "Događaje";
-            this.bntDogadaje.UseVisualStyleBackColor = true;
+            this.bntDogadaje.UseVisualStyleBackColor = false;
             // 
             // bntIdeje
             // 
+            this.bntIdeje.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntIdeje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntIdeje.Location = new System.Drawing.Point(64, 275);
             this.bntIdeje.Name = "bntIdeje";
             this.bntIdeje.Size = new System.Drawing.Size(241, 41);
             this.bntIdeje.TabIndex = 3;
             this.bntIdeje.Text = "Ideje";
-            this.bntIdeje.UseVisualStyleBackColor = true;
+            this.bntIdeje.UseVisualStyleBackColor = false;
             // 
             // bntKomisiju
             // 
+            this.bntKomisiju.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntKomisiju.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntKomisiju.Location = new System.Drawing.Point(64, 365);
             this.bntKomisiju.Name = "bntKomisiju";
             this.bntKomisiju.Size = new System.Drawing.Size(241, 41);
             this.bntKomisiju.TabIndex = 4;
             this.bntKomisiju.Text = "Komisiju";
-            this.bntKomisiju.UseVisualStyleBackColor = true;
+            this.bntKomisiju.UseVisualStyleBackColor = false;
             // 
             // rTxtBoxKomisije
             // 
+            this.rTxtBoxKomisije.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.rTxtBoxKomisije.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rTxtBoxKomisije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rTxtBoxKomisije.Location = new System.Drawing.Point(6, 25);
@@ -94,12 +102,14 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             // 
             // bntMjenajKorisnik
             // 
+            this.bntMjenajKorisnik.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntMjenajKorisnik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntMjenajKorisnik.Location = new System.Drawing.Point(696, 13);
             this.bntMjenajKorisnik.Name = "bntMjenajKorisnik";
             this.bntMjenajKorisnik.Size = new System.Drawing.Size(92, 23);
             this.bntMjenajKorisnik.TabIndex = 5;
             this.bntMjenajKorisnik.Text = "Mjenaj korisnik";
-            this.bntMjenajKorisnik.UseVisualStyleBackColor = true;
+            this.bntMjenajKorisnik.UseVisualStyleBackColor = false;
             // 
             // labelKorisink
             // 
@@ -112,17 +122,22 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             // 
             // bntIzazovi
             // 
+            this.bntIzazovi.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntIzazovi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntIzazovi.Location = new System.Drawing.Point(64, 95);
             this.bntIzazovi.Name = "bntIzazovi";
             this.bntIzazovi.Size = new System.Drawing.Size(241, 41);
             this.bntIzazovi.TabIndex = 1;
             this.bntIzazovi.Text = "Izazovi";
-            this.bntIzazovi.UseVisualStyleBackColor = true;
+            this.bntIzazovi.UseVisualStyleBackColor = false;
             // 
             // groupBOxKomisije
             // 
+            this.groupBOxKomisije.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupBOxKomisije.Controls.Add(this.rTxtBoxKomisije);
-            this.groupBOxKomisije.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBOxKomisije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBOxKomisije.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBOxKomisije.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBOxKomisije.Location = new System.Drawing.Point(413, 42);
             this.groupBOxKomisije.Name = "groupBOxKomisije";
             this.groupBOxKomisije.Size = new System.Drawing.Size(375, 200);
@@ -132,8 +147,11 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             // 
             // groupBoxDogadaje
             // 
+            this.groupBoxDogadaje.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupBoxDogadaje.Controls.Add(this.rTxtBoxDogadaje);
-            this.groupBoxDogadaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBoxDogadaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBoxDogadaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.groupBoxDogadaje.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBoxDogadaje.Location = new System.Drawing.Point(413, 248);
             this.groupBoxDogadaje.Name = "groupBoxDogadaje";
             this.groupBoxDogadaje.Size = new System.Drawing.Size(375, 200);
@@ -143,7 +161,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             // 
             // rTxtBoxDogadaje
             // 
-            this.rTxtBoxDogadaje.BackColor = System.Drawing.SystemColors.Control;
+            this.rTxtBoxDogadaje.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.rTxtBoxDogadaje.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rTxtBoxDogadaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rTxtBoxDogadaje.Location = new System.Drawing.Point(6, 25);
@@ -156,6 +174,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBoxDogadaje);
             this.Controls.Add(this.groupBOxKomisije);
