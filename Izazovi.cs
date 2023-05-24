@@ -16,5 +16,24 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
         {
             InitializeComponent();
         }
+
+        private void bntNoviIzazov_Click(object sender, EventArgs e)
+        {
+            UnosKomisije frmUnKomisije = new UnosKomisije();
+
+            DialogResult rezUnosKomsije = frmUnKomisije.ShowDialog();
+        }
+
+        private void bntRandomIzazov_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("'Random Izazov'");
+        }
+
+        private void bntMjenajKorisnik_Click(object sender, EventArgs e)
+        {
+            Korisnik frmKorisnik = new Korisnik();
+
+            DialogResult rezKorsnik = frmKorisnik.ShowDialog();
+        }
     }
 }

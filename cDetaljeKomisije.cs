@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zavrsna_aplikacija_Umjetno_pomaganje
+{
+    class cDetaljeKomisije
+    {
+        DateTime datumNapravljen, rok;
+        string opis, idKomisije, idKljient;
+
+        public cDetaljeKomisije(string idKomisije, string idKljient, DateTime datumNapravljen, DateTime rok, string opis)
+        {
+            this.idKomisije = idKomisije;
+            this.idKljient = idKljient;
+            this.datumNapravljen = datumNapravljen;
+            this.rok = rok;
+            this.opis = opis;
+        }
+
+        public DateTime DatumNapravljen { get => datumNapravljen; set => datumNapravljen = value; }
+        public DateTime Rok { get => rok; set => rok = value; }
+        public string Opis { get => opis; set => opis = value; }
+        public string IdKomisije { get => idKomisije; set => idKomisije = value; }
+        public string IdKljient { get => idKljient; set => idKljient = value; }
+    }
+}

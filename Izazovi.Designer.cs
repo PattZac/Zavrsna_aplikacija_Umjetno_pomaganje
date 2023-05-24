@@ -28,22 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelKorisink = new System.Windows.Forms.Label();
             this.bntMjenajKorisnik = new System.Windows.Forms.Button();
-            this.bntPrikazajKomisije = new System.Windows.Forms.Button();
-            this.bntMjenajPrikaz = new System.Windows.Forms.Button();
+            this.bntPrikazajIzazovi = new System.Windows.Forms.Button();
+            this.bntRandomIzazov = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.bntNoviKomisiju = new System.Windows.Forms.Button();
+            this.bntNoviIzazov = new System.Windows.Forms.Button();
+            this.txtKorsinikIme = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // labelKorisink
-            // 
-            this.labelKorisink.AutoSize = true;
-            this.labelKorisink.Location = new System.Drawing.Point(616, 18);
-            this.labelKorisink.Name = "labelKorisink";
-            this.labelKorisink.Size = new System.Drawing.Size(74, 13);
-            this.labelKorisink.TabIndex = 25;
-            this.labelKorisink.Text = "Ime korisnika |";
             // 
             // bntMjenajKorisnik
             // 
@@ -55,28 +46,30 @@
             this.bntMjenajKorisnik.TabIndex = 24;
             this.bntMjenajKorisnik.Text = "Mjenaj korisnik";
             this.bntMjenajKorisnik.UseVisualStyleBackColor = false;
+            this.bntMjenajKorisnik.Click += new System.EventHandler(this.bntMjenajKorisnik_Click);
             // 
-            // bntPrikazajKomisije
+            // bntPrikazajIzazovi
             // 
-            this.bntPrikazajKomisije.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bntPrikazajKomisije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntPrikazajKomisije.Location = new System.Drawing.Point(64, 95);
-            this.bntPrikazajKomisije.Name = "bntPrikazajKomisije";
-            this.bntPrikazajKomisije.Size = new System.Drawing.Size(241, 41);
-            this.bntPrikazajKomisije.TabIndex = 20;
-            this.bntPrikazajKomisije.Text = "Prikazaj sve Izazovi";
-            this.bntPrikazajKomisije.UseVisualStyleBackColor = false;
+            this.bntPrikazajIzazovi.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntPrikazajIzazovi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntPrikazajIzazovi.Location = new System.Drawing.Point(64, 95);
+            this.bntPrikazajIzazovi.Name = "bntPrikazajIzazovi";
+            this.bntPrikazajIzazovi.Size = new System.Drawing.Size(241, 41);
+            this.bntPrikazajIzazovi.TabIndex = 20;
+            this.bntPrikazajIzazovi.Text = "Prikazaj sve Izazovi";
+            this.bntPrikazajIzazovi.UseVisualStyleBackColor = false;
             // 
-            // bntMjenajPrikaz
+            // bntRandomIzazov
             // 
-            this.bntMjenajPrikaz.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bntMjenajPrikaz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntMjenajPrikaz.Location = new System.Drawing.Point(64, 225);
-            this.bntMjenajPrikaz.Name = "bntMjenajPrikaz";
-            this.bntMjenajPrikaz.Size = new System.Drawing.Size(241, 41);
-            this.bntMjenajPrikaz.TabIndex = 21;
-            this.bntMjenajPrikaz.Text = "Prikazi po slučajni odabirau jedan izazov";
-            this.bntMjenajPrikaz.UseVisualStyleBackColor = false;
+            this.bntRandomIzazov.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntRandomIzazov.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntRandomIzazov.Location = new System.Drawing.Point(64, 225);
+            this.bntRandomIzazov.Name = "bntRandomIzazov";
+            this.bntRandomIzazov.Size = new System.Drawing.Size(241, 41);
+            this.bntRandomIzazov.TabIndex = 21;
+            this.bntRandomIzazov.Text = "Prikazi po slučajni odabirau jedan izazov";
+            this.bntRandomIzazov.UseVisualStyleBackColor = false;
+            this.bntRandomIzazov.Click += new System.EventHandler(this.bntRandomIzazov_Click);
             // 
             // labelTitle
             // 
@@ -89,16 +82,28 @@
             this.labelTitle.TabIndex = 23;
             this.labelTitle.Text = "Izazovi";
             // 
-            // bntNoviKomisiju
+            // bntNoviIzazov
             // 
-            this.bntNoviKomisiju.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bntNoviKomisiju.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntNoviKomisiju.Location = new System.Drawing.Point(64, 365);
-            this.bntNoviKomisiju.Name = "bntNoviKomisiju";
-            this.bntNoviKomisiju.Size = new System.Drawing.Size(241, 41);
-            this.bntNoviKomisiju.TabIndex = 22;
-            this.bntNoviKomisiju.Text = "Unesi Novu Izazov";
-            this.bntNoviKomisiju.UseVisualStyleBackColor = false;
+            this.bntNoviIzazov.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntNoviIzazov.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntNoviIzazov.Location = new System.Drawing.Point(64, 365);
+            this.bntNoviIzazov.Name = "bntNoviIzazov";
+            this.bntNoviIzazov.Size = new System.Drawing.Size(241, 41);
+            this.bntNoviIzazov.TabIndex = 22;
+            this.bntNoviIzazov.Text = "Unesi Novu Izazov";
+            this.bntNoviIzazov.UseVisualStyleBackColor = false;
+            this.bntNoviIzazov.Click += new System.EventHandler(this.bntNoviIzazov_Click);
+            // 
+            // txtKorsinikIme
+            // 
+            this.txtKorsinikIme.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtKorsinikIme.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtKorsinikIme.Location = new System.Drawing.Point(419, 18);
+            this.txtKorsinikIme.Name = "txtKorsinikIme";
+            this.txtKorsinikIme.Size = new System.Drawing.Size(271, 13);
+            this.txtKorsinikIme.TabIndex = 25;
+            this.txtKorsinikIme.Text = "Ime Korsnika |";
+            this.txtKorsinikIme.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Izazovi
             // 
@@ -106,12 +111,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelKorisink);
+            this.Controls.Add(this.txtKorsinikIme);
             this.Controls.Add(this.bntMjenajKorisnik);
-            this.Controls.Add(this.bntPrikazajKomisije);
-            this.Controls.Add(this.bntMjenajPrikaz);
+            this.Controls.Add(this.bntPrikazajIzazovi);
+            this.Controls.Add(this.bntRandomIzazov);
             this.Controls.Add(this.labelTitle);
-            this.Controls.Add(this.bntNoviKomisiju);
+            this.Controls.Add(this.bntNoviIzazov);
             this.Name = "Izazovi";
             this.Text = "Umjetnik pomaganje - Izazovi";
             this.ResumeLayout(false);
@@ -120,12 +125,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelKorisink;
         private System.Windows.Forms.Button bntMjenajKorisnik;
-        private System.Windows.Forms.Button bntPrikazajKomisije;
-        private System.Windows.Forms.Button bntMjenajPrikaz;
+        private System.Windows.Forms.Button bntPrikazajIzazovi;
+        private System.Windows.Forms.Button bntRandomIzazov;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Button bntNoviKomisiju;
+        private System.Windows.Forms.Button bntNoviIzazov;
+        private System.Windows.Forms.TextBox txtKorsinikIme;
     }
 }

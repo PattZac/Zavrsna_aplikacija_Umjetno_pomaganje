@@ -35,11 +35,11 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.bntKomisiju = new System.Windows.Forms.Button();
             this.rTxtBoxKomisije = new System.Windows.Forms.RichTextBox();
             this.bntMjenajKorisnik = new System.Windows.Forms.Button();
-            this.labelKorisink = new System.Windows.Forms.Label();
             this.bntIzazovi = new System.Windows.Forms.Button();
             this.groupBOxKomisije = new System.Windows.Forms.GroupBox();
             this.groupBoxDogadaje = new System.Windows.Forms.GroupBox();
             this.rTxtBoxDogadaje = new System.Windows.Forms.RichTextBox();
+            this.txtKorsinikIme = new System.Windows.Forms.TextBox();
             this.groupBOxKomisije.SuspendLayout();
             this.groupBoxDogadaje.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.bntDogadaje.TabIndex = 2;
             this.bntDogadaje.Text = "Događaje";
             this.bntDogadaje.UseVisualStyleBackColor = false;
+            this.bntDogadaje.Click += new System.EventHandler(this.bntDogadaje_Click);
             // 
             // bntIdeje
             // 
@@ -76,6 +77,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.bntIdeje.TabIndex = 3;
             this.bntIdeje.Text = "Ideje";
             this.bntIdeje.UseVisualStyleBackColor = false;
+            this.bntIdeje.Click += new System.EventHandler(this.bntIdeje_Click);
             // 
             // bntKomisiju
             // 
@@ -87,6 +89,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.bntKomisiju.TabIndex = 4;
             this.bntKomisiju.Text = "Komisiju";
             this.bntKomisiju.UseVisualStyleBackColor = false;
+            this.bntKomisiju.Click += new System.EventHandler(this.bntKomisiju_Click);
             // 
             // rTxtBoxKomisije
             // 
@@ -110,15 +113,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.bntMjenajKorisnik.TabIndex = 5;
             this.bntMjenajKorisnik.Text = "Mjenaj korisnik";
             this.bntMjenajKorisnik.UseVisualStyleBackColor = false;
-            // 
-            // labelKorisink
-            // 
-            this.labelKorisink.AutoSize = true;
-            this.labelKorisink.Location = new System.Drawing.Point(616, 18);
-            this.labelKorisink.Name = "labelKorisink";
-            this.labelKorisink.Size = new System.Drawing.Size(74, 13);
-            this.labelKorisink.TabIndex = 7;
-            this.labelKorisink.Text = "Ime korisnika |";
+            this.bntMjenajKorisnik.Click += new System.EventHandler(this.bntMjenajKorisnik_Click);
             // 
             // bntIzazovi
             // 
@@ -130,6 +125,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.bntIzazovi.TabIndex = 1;
             this.bntIzazovi.Text = "Izazovi";
             this.bntIzazovi.UseVisualStyleBackColor = false;
+            this.bntIzazovi.Click += new System.EventHandler(this.bntIzazovi_Click);
             // 
             // groupBOxKomisije
             // 
@@ -170,16 +166,27 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.rTxtBoxDogadaje.TabIndex = 0;
             this.rTxtBoxDogadaje.Text = "";
             // 
+            // txtKorsinikIme
+            // 
+            this.txtKorsinikIme.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtKorsinikIme.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtKorsinikIme.Location = new System.Drawing.Point(419, 18);
+            this.txtKorsinikIme.Name = "txtKorsinikIme";
+            this.txtKorsinikIme.Size = new System.Drawing.Size(271, 13);
+            this.txtKorsinikIme.TabIndex = 11;
+            this.txtKorsinikIme.Text = "Ime Korsnika |";
+            this.txtKorsinikIme.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtKorsinikIme);
             this.Controls.Add(this.groupBoxDogadaje);
             this.Controls.Add(this.groupBOxKomisije);
             this.Controls.Add(this.bntIzazovi);
-            this.Controls.Add(this.labelKorisink);
             this.Controls.Add(this.bntMjenajKorisnik);
             this.Controls.Add(this.bntKomisiju);
             this.Controls.Add(this.bntIdeje);
@@ -202,11 +209,11 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
         private System.Windows.Forms.Button bntKomisiju;
         private System.Windows.Forms.RichTextBox rTxtBoxKomisije;
         private System.Windows.Forms.Button bntMjenajKorisnik;
-        private System.Windows.Forms.Label labelKorisink;
         private System.Windows.Forms.Button bntIzazovi;
         private System.Windows.Forms.GroupBox groupBOxKomisije;
         private System.Windows.Forms.GroupBox groupBoxDogadaje;
         private System.Windows.Forms.RichTextBox rTxtBoxDogadaje;
+        private System.Windows.Forms.TextBox txtKorsinikIme;
     }
 }
 

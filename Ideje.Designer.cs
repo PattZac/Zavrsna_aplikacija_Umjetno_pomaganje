@@ -34,7 +34,7 @@
             this.bntMjenajPrikaz = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
             this.bntNoviKomisiju = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtBoxIdeaType = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelKorisink
@@ -101,15 +101,16 @@
             this.bntNoviKomisiju.Text = "Generiraje novi ideju sa izazova";
             this.bntNoviKomisiju.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // txtBoxIdeaType
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 151);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 20);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Vrestu Ideju: ___________";
+            this.txtBoxIdeaType.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtBoxIdeaType.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxIdeaType.Location = new System.Drawing.Point(64, 143);
+            this.txtBoxIdeaType.Name = "txtBoxIdeaType";
+            this.txtBoxIdeaType.Size = new System.Drawing.Size(241, 13);
+            this.txtBoxIdeaType.TabIndex = 32;
+            this.txtBoxIdeaType.Text = "Vrestu Ideju:";
+            this.txtBoxIdeaType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Ideje
             // 
@@ -117,7 +118,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtBoxIdeaType);
             this.Controls.Add(this.labelKorisink);
             this.Controls.Add(this.bntMjenajKorisnik);
             this.Controls.Add(this.bntPrikazajKomisije);
@@ -139,6 +140,6 @@
         private System.Windows.Forms.Button bntMjenajPrikaz;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Button bntNoviKomisiju;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBoxIdeaType;
     }
 }

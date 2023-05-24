@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cDetaljeKomisije.cs" />
+    <Compile Include="cDogadaja.cs" />
+    <Compile Include="cIzazovi.cs" />
+    <Compile Include="cKlijent.cs" />
+    <Compile Include="cKomisije.cs" />
+    <Compile Include="cKorisnik.cs" />
     <Compile Include="Dogadaje.cs">
       <SubType>Form</SubType>
     </Compile>

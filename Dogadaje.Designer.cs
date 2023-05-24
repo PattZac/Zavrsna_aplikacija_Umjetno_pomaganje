@@ -32,11 +32,12 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.rTxtBoxDogadaje = new System.Windows.Forms.RichTextBox();
             this.groupBoxDogadaje = new System.Windows.Forms.GroupBox();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.labelKorisink = new System.Windows.Forms.Label();
+            this.bntPrikazajDogadaje = new System.Windows.Forms.Button();
+            this.bntListOrder = new System.Windows.Forms.Button();
+            this.bntUnosDogadaje = new System.Windows.Forms.Button();
             this.bntMjenajKorisnik = new System.Windows.Forms.Button();
+            this.txtBoxListOrder = new System.Windows.Forms.TextBox();
+            this.txtKorsinikIme = new System.Windows.Forms.TextBox();
             this.groupBoxDogadaje.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,47 +76,40 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.labelTitle.TabIndex = 12;
             this.labelTitle.Text = "Događaje";
             // 
-            // button1
+            // bntPrikazajDogadaje
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(64, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(241, 41);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Prikazaj sve Komisije";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bntPrikazajDogadaje.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntPrikazajDogadaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntPrikazajDogadaje.Location = new System.Drawing.Point(64, 95);
+            this.bntPrikazajDogadaje.Name = "bntPrikazajDogadaje";
+            this.bntPrikazajDogadaje.Size = new System.Drawing.Size(241, 41);
+            this.bntPrikazajDogadaje.TabIndex = 13;
+            this.bntPrikazajDogadaje.Text = "Prikazaj sve Događaje";
+            this.bntPrikazajDogadaje.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // bntListOrder
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(64, 225);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(241, 41);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Mjenaj prikaz listu Komisije";
-            this.button2.UseVisualStyleBackColor = false;
+            this.bntListOrder.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntListOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntListOrder.Location = new System.Drawing.Point(64, 225);
+            this.bntListOrder.Name = "bntListOrder";
+            this.bntListOrder.Size = new System.Drawing.Size(241, 41);
+            this.bntListOrder.TabIndex = 14;
+            this.bntListOrder.Text = "Mjenaj prikaz listu Događaje";
+            this.bntListOrder.UseVisualStyleBackColor = false;
+            this.bntListOrder.Click += new System.EventHandler(this.bntListOrder_Click);
             // 
-            // button3
+            // bntUnosDogadaje
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(64, 365);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(241, 41);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Unesi Novu Komisiju";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // labelKorisink
-            // 
-            this.labelKorisink.AutoSize = true;
-            this.labelKorisink.Location = new System.Drawing.Point(616, 18);
-            this.labelKorisink.Name = "labelKorisink";
-            this.labelKorisink.Size = new System.Drawing.Size(74, 13);
-            this.labelKorisink.TabIndex = 17;
-            this.labelKorisink.Text = "Ime korisnika |";
+            this.bntUnosDogadaje.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntUnosDogadaje.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntUnosDogadaje.Location = new System.Drawing.Point(64, 365);
+            this.bntUnosDogadaje.Name = "bntUnosDogadaje";
+            this.bntUnosDogadaje.Size = new System.Drawing.Size(241, 41);
+            this.bntUnosDogadaje.TabIndex = 15;
+            this.bntUnosDogadaje.Text = "Unesi Novi Događaj";
+            this.bntUnosDogadaje.UseVisualStyleBackColor = false;
+            this.bntUnosDogadaje.Click += new System.EventHandler(this.bntUnosDogadaje_Click);
             // 
             // bntMjenajKorisnik
             // 
@@ -127,6 +121,29 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.bntMjenajKorisnik.TabIndex = 16;
             this.bntMjenajKorisnik.Text = "Mjenaj korisnik";
             this.bntMjenajKorisnik.UseVisualStyleBackColor = false;
+            this.bntMjenajKorisnik.Click += new System.EventHandler(this.bntMjenajKorisnik_Click);
+            // 
+            // txtBoxListOrder
+            // 
+            this.txtBoxListOrder.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtBoxListOrder.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBoxListOrder.Location = new System.Drawing.Point(64, 273);
+            this.txtBoxListOrder.Name = "txtBoxListOrder";
+            this.txtBoxListOrder.Size = new System.Drawing.Size(241, 13);
+            this.txtBoxListOrder.TabIndex = 18;
+            this.txtBoxListOrder.Text = "Prikaz List: Najblizi";
+            this.txtBoxListOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtKorsinikIme
+            // 
+            this.txtKorsinikIme.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtKorsinikIme.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtKorsinikIme.Location = new System.Drawing.Point(419, 18);
+            this.txtKorsinikIme.Name = "txtKorsinikIme";
+            this.txtKorsinikIme.Size = new System.Drawing.Size(271, 13);
+            this.txtKorsinikIme.TabIndex = 19;
+            this.txtKorsinikIme.Text = "Ime Korsnika |";
+            this.txtKorsinikIme.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Dogadaje
             // 
@@ -134,11 +151,12 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelKorisink);
+            this.Controls.Add(this.txtKorsinikIme);
+            this.Controls.Add(this.txtBoxListOrder);
             this.Controls.Add(this.bntMjenajKorisnik);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bntUnosDogadaje);
+            this.Controls.Add(this.bntListOrder);
+            this.Controls.Add(this.bntPrikazajDogadaje);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.groupBoxDogadaje);
             this.Name = "Dogadaje";
@@ -154,10 +172,11 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
         private System.Windows.Forms.RichTextBox rTxtBoxDogadaje;
         private System.Windows.Forms.GroupBox groupBoxDogadaje;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label labelKorisink;
+        private System.Windows.Forms.Button bntPrikazajDogadaje;
+        private System.Windows.Forms.Button bntListOrder;
+        private System.Windows.Forms.Button bntUnosDogadaje;
         private System.Windows.Forms.Button bntMjenajKorisnik;
+        private System.Windows.Forms.TextBox txtBoxListOrder;
+        private System.Windows.Forms.TextBox txtKorsinikIme;
     }
 }

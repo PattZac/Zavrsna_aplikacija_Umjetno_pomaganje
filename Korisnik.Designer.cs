@@ -35,10 +35,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.bntUnos = new System.Windows.Forms.Button();
+            this.bntPrijava = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bntNoviKorsnik = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -130,16 +130,16 @@
             this.textBox1.Size = new System.Drawing.Size(221, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // bntUnos
+            // bntPrijava
             // 
-            this.bntUnos.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.bntUnos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntUnos.Location = new System.Drawing.Point(21, 397);
-            this.bntUnos.Name = "bntUnos";
-            this.bntUnos.Size = new System.Drawing.Size(180, 41);
-            this.bntUnos.TabIndex = 24;
-            this.bntUnos.Text = "Prijavi se";
-            this.bntUnos.UseVisualStyleBackColor = false;
+            this.bntPrijava.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntPrijava.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntPrijava.Location = new System.Drawing.Point(21, 397);
+            this.bntPrijava.Name = "bntPrijava";
+            this.bntPrijava.Size = new System.Drawing.Size(180, 41);
+            this.bntPrijava.TabIndex = 24;
+            this.bntPrijava.Text = "Prijavi se";
+            this.bntPrijava.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
@@ -166,16 +166,17 @@
             this.listBox1.Size = new System.Drawing.Size(372, 119);
             this.listBox1.TabIndex = 0;
             // 
-            // button1
+            // bntNoviKorsnik
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(251, 397);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 41);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Napravi novi korsnik";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bntNoviKorsnik.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.bntNoviKorsnik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntNoviKorsnik.Location = new System.Drawing.Point(251, 397);
+            this.bntNoviKorsnik.Name = "bntNoviKorsnik";
+            this.bntNoviKorsnik.Size = new System.Drawing.Size(180, 41);
+            this.bntNoviKorsnik.TabIndex = 27;
+            this.bntNoviKorsnik.Text = "Napravi novi korsnik";
+            this.bntNoviKorsnik.UseVisualStyleBackColor = false;
+            this.bntNoviKorsnik.Click += new System.EventHandler(this.bntNoviKorsnik_Click);
             // 
             // Korisnik
             // 
@@ -183,10 +184,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(449, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bntNoviKorsnik);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.bntUnos);
+            this.Controls.Add(this.bntPrijava);
             this.Name = "Korisnik";
             this.Text = "Umjetnik pomaganje - Korisnik";
             this.groupBox1.ResumeLayout(false);
@@ -205,9 +206,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button bntUnos;
+        private System.Windows.Forms.Button bntPrijava;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bntNoviKorsnik;
     }
 }
