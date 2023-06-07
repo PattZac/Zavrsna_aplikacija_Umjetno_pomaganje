@@ -28,23 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelKorisink = new System.Windows.Forms.Label();
             this.bntMjenajKorisnik = new System.Windows.Forms.Button();
             this.bntPrikazajKomisije = new System.Windows.Forms.Button();
             this.bntMjenajPrikaz = new System.Windows.Forms.Button();
             this.labelTitle = new System.Windows.Forms.Label();
             this.bntNoviKomisiju = new System.Windows.Forms.Button();
             this.txtBoxIdeaType = new System.Windows.Forms.TextBox();
+            this.txtKorsinikIme = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // labelKorisink
-            // 
-            this.labelKorisink.AutoSize = true;
-            this.labelKorisink.Location = new System.Drawing.Point(616, 18);
-            this.labelKorisink.Name = "labelKorisink";
-            this.labelKorisink.Size = new System.Drawing.Size(74, 13);
-            this.labelKorisink.TabIndex = 31;
-            this.labelKorisink.Text = "Ime korisnika |";
             // 
             // bntMjenajKorisnik
             // 
@@ -56,6 +47,7 @@
             this.bntMjenajKorisnik.TabIndex = 30;
             this.bntMjenajKorisnik.Text = "Mjenaj korisnik";
             this.bntMjenajKorisnik.UseVisualStyleBackColor = false;
+            this.bntMjenajKorisnik.Click += new System.EventHandler(this.bntMjenajKorisnik_Click);
             // 
             // bntPrikazajKomisije
             // 
@@ -112,14 +104,25 @@
             this.txtBoxIdeaType.Text = "Vrestu Ideju:";
             this.txtBoxIdeaType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // txtKorsinikIme
+            // 
+            this.txtKorsinikIme.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtKorsinikIme.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtKorsinikIme.Location = new System.Drawing.Point(419, 18);
+            this.txtKorsinikIme.Name = "txtKorsinikIme";
+            this.txtKorsinikIme.Size = new System.Drawing.Size(271, 13);
+            this.txtKorsinikIme.TabIndex = 33;
+            this.txtKorsinikIme.Text = "Ime Korsnika |";
+            this.txtKorsinikIme.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Ideje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtKorsinikIme);
             this.Controls.Add(this.txtBoxIdeaType);
-            this.Controls.Add(this.labelKorisink);
             this.Controls.Add(this.bntMjenajKorisnik);
             this.Controls.Add(this.bntPrikazajKomisije);
             this.Controls.Add(this.bntMjenajPrikaz);
@@ -133,13 +136,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelKorisink;
         private System.Windows.Forms.Button bntMjenajKorisnik;
         private System.Windows.Forms.Button bntPrikazajKomisije;
         private System.Windows.Forms.Button bntMjenajPrikaz;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Button bntNoviKomisiju;
         private System.Windows.Forms.TextBox txtBoxIdeaType;
+        private System.Windows.Forms.TextBox txtKorsinikIme;
     }
 }

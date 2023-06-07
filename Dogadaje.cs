@@ -12,9 +12,13 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
 {
     public partial class Dogadaje : Form
     {
+        cKorisnik user = new cKorisnik("UNDEFIND", "Ime Korsnika", 'M');
+
+        internal cKorisnik User { get => user; set => user = value; }
         public Dogadaje()
         {
             InitializeComponent();
+            changeName();
         }
         int ListOrder = 0;
         private void bntUnosDogadaje_Click(object sender, EventArgs e)
@@ -49,6 +53,20 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             Korisnik frmKorisnik = new Korisnik();
 
             DialogResult rezKorsnik = frmKorisnik.ShowDialog();
+
+            if (rezKorsnik == System.Windows.Forms.DialogResult.OK)
+                user = frmKorisnik.CurrentKorisnik;
+            changeName();
+        }
+        public void changeName()
+        {
+            string name = user.Ime;
+            if (user.Prezime != null)
+            {
+                name += " " + user.Prezime;
+            }
+            name += " |";
+            txtKorsinikIme.Text = name;
         }
     }
 }

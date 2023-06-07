@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboxSpol = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPrezime = new System.Windows.Forms.TextBox();
+            this.txtIme = new System.Windows.Forms.TextBox();
             this.bntPrijava = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBoxKorsinike = new System.Windows.Forms.ListBox();
             this.bntNoviKorsnik = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -46,12 +46,12 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cboxSpol);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtPrezime);
+            this.groupBox1.Controls.Add(this.txtIme);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Location = new System.Drawing.Point(21, 188);
@@ -61,19 +61,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Novi Korsnik";
             // 
-            // comboBox1
+            // cboxSpol
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboxSpol.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.cboxSpol.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxSpol.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.cboxSpol.FormattingEnabled = true;
+            this.cboxSpol.Items.AddRange(new object[] {
             "Muški",
             "Ženski"});
-            this.comboBox1.Location = new System.Drawing.Point(20, 150);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(221, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cboxSpol.Location = new System.Drawing.Point(20, 150);
+            this.cboxSpol.Name = "cboxSpol";
+            this.cboxSpol.Size = new System.Drawing.Size(221, 21);
+            this.cboxSpol.TabIndex = 5;
             // 
             // label1
             // 
@@ -108,27 +108,27 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Ime";
             // 
-            // textBox2
+            // txtPrezime
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox2.Location = new System.Drawing.Point(20, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtPrezime.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtPrezime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPrezime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrezime.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPrezime.Location = new System.Drawing.Point(20, 100);
+            this.txtPrezime.Name = "txtPrezime";
+            this.txtPrezime.Size = new System.Drawing.Size(221, 20);
+            this.txtPrezime.TabIndex = 1;
             // 
-            // textBox1
+            // txtIme
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.textBox1.Location = new System.Drawing.Point(20, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtIme.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIme.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtIme.Location = new System.Drawing.Point(20, 50);
+            this.txtIme.Name = "txtIme";
+            this.txtIme.Size = new System.Drawing.Size(221, 20);
+            this.txtIme.TabIndex = 0;
             // 
             // bntPrijava
             // 
@@ -140,11 +140,12 @@
             this.bntPrijava.TabIndex = 24;
             this.bntPrijava.Text = "Prijavi se";
             this.bntPrijava.UseVisualStyleBackColor = false;
+            this.bntPrijava.Click += new System.EventHandler(this.bntPrijava_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.groupBox2.Controls.Add(this.listBox1);
+            this.groupBox2.Controls.Add(this.listBoxKorsinike);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox2.Location = new System.Drawing.Point(21, 13);
@@ -154,17 +155,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Korisnike";
             // 
-            // listBox1
+            // listBoxKorsinike
             // 
-            this.listBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(20, 33);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(372, 119);
-            this.listBox1.TabIndex = 0;
+            this.listBoxKorsinike.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.listBoxKorsinike.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBoxKorsinike.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxKorsinike.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.listBoxKorsinike.FormattingEnabled = true;
+            this.listBoxKorsinike.Location = new System.Drawing.Point(20, 33);
+            this.listBoxKorsinike.Name = "listBoxKorsinike";
+            this.listBoxKorsinike.Size = new System.Drawing.Size(372, 119);
+            this.listBoxKorsinike.TabIndex = 0;
             // 
             // bntNoviKorsnik
             // 
@@ -200,15 +201,15 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboxSpol;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPrezime;
+        private System.Windows.Forms.TextBox txtIme;
         private System.Windows.Forms.Button bntPrijava;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxKorsinike;
         private System.Windows.Forms.Button bntNoviKorsnik;
     }
 }

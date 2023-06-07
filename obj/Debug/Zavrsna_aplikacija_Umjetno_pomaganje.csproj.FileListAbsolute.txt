@@ -17,3 +17,23 @@ C:\Users\korisnik\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\
 C:\Users\korisnik\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.csproj.CoreCompileInputs.cache
 C:\Users\korisnik\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.exe
 C:\Users\korisnik\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.pdb
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.csproj.AssemblyReference.cache
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.csproj.SuggestedBindingRedirects.cache
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.Dogadaje.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.MainForm.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.Ideje.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.IspisIdeju.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.Izazovi.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.Komisije.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.Korisnik.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.UnosDogadaje.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.UnosIzazovi.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.UnosKomisije.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.Properties.Resources.resources
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.csproj.GenerateResource.cache
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.csproj.CoreCompileInputs.cache
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.exe
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\obj\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.pdb
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\bin\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.exe.config
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\bin\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.exe
+C:\Users\unkno\Downloads\Zavrsna_aplikacija_Umjetno_pomaganje-main (1)\Zavrsna_aplikacija_Umjetno_pomaganje-main\bin\Debug\Zavrsna_aplikacija_Umjetno_pomaganje.pdb

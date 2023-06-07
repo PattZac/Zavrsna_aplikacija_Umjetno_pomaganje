@@ -17,10 +17,17 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.platformuKomunikacije = platformuKomunikacije;
             this.adresaKomunikacije = adresaKomunikacije;
         }
-
+        public string ToCsvString()
+        {
+            return Id + "," + Ime + "," + PlatformuKomunikacije + "," + AdresaKomunikacije;
+        }
+        public override string ToString()
+        {
+            return "Ime Klijenta: " + Ime + " | Platformu za komunikaciju: " + PlatformuKomunikacije + " | Adressu klijenta na platformu za komunikaciju: " + AdresaKomunikacije + " | ";
+        }
         public string Id { get => id; set => id = value; }
         public string Ime { get => ime; set => ime = value; }
         public string PlatformuKomunikacije { get => platformuKomunikacije; set => platformuKomunikacije = value; }
-        public string AdresaKomunikacije1 { get => adresaKomunikacije; set => adresaKomunikacije = value; }
+        public string AdresaKomunikacije { get => adresaKomunikacije; set => adresaKomunikacije = value; }
     }
 }
