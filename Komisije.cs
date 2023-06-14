@@ -51,8 +51,12 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
         private void bntUnosKomisiju_Click(object sender, EventArgs e)
         {
             UnosKomisije frmUnKomsije = new UnosKomisije();
-
+            frmUnKomsije.User = User;
             DialogResult rezUnosKomsije = frmUnKomsije.ShowDialog();
+
+            if (rezUnosKomsije == System.Windows.Forms.DialogResult.OK)
+                loadKomsije();
+            
         }
 
         private void bntMjenajKorisnik_Click(object sender, EventArgs e)
@@ -64,6 +68,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             if (rezKorsnik == System.Windows.Forms.DialogResult.OK)
                 user = frmKorisnik.CurrentKorisnik;
             changeName();
+            loadKomsije();
         }
         public void changeName()
         {
@@ -80,78 +85,92 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
         List<cDetaljeKomisije> ListaDetaljeKomsije = new List<cDetaljeKomisije>();
         public void loadKomsije()
         {
+            rTxtBoxKomisije.Clear();
             string dirMain = "C:\\Users\\" + Environment.UserName + "\\Documents\\UmjetnikPomaganje";
             string fileKlijent = dirMain + "\\Klijenti.csv";
             if (File.Exists(fileKlijent))
             {
-
                 using (StreamReader reader = new StreamReader(File.OpenRead(fileKlijent)))
                 {
                     string fileContent = reader.ReadToEnd();
                     string[] content = fileContent.Split(',');
                     int numb = 0;
+                    ListaKlijenta.Clear();
                     while (content.Length >= numb + 4)
                     {
+
                         cKlijent loadKlijent = new cKlijent(
                             content[numb + 0].Substring(0, content[numb].Length),
                             content[numb + 1].Substring(0, content[numb + 1].Length),
                             content[numb + 2].Substring(0, content[numb + 2].Length),
                             content[numb + 3].Substring(0, content[numb + 3].Length));
                         ListaKlijenta.Add(loadKlijent);
+                        if (numb>1) { // Neznam zašto ali ID ima \n na početku i radije grešku non stop pa evo zalucija za to 
+                            loadKlijent.Id = content[numb + 0].Substring(2, content[numb].Length - 2);
+                        } 
                         numb += 4;
                     }
-
                 }
-            }
             string fileKomsije = dirMain + "\\Komsije.csv";
-            if (File.Exists(fileKlijent))
-            {
-
-                using (StreamReader reader = new StreamReader(File.OpenRead(fileKlijent)))
+            if (File.Exists(fileKomsije))
+            { 
+                using (StreamReader reader = new StreamReader(File.OpenRead(fileKomsije)))
                 {
                     string fileContent = reader.ReadToEnd();
                     string[] content = fileContent.Split(',');
                     int numb = 0;
-                    while (content.Length >= numb + 3)
+                    ListaKomisije.Clear();
+                    while (content.Length >= numb + 5)
                     {
                         cKomisije loadKomisje = new cKomisije(
                             content[numb + 0].Substring(0, content[numb].Length),
                             Convert.ToDouble(content[numb + 1].Substring(0, content[numb + 1].Length)),
-                            content[numb + 2].Substring(0, content[numb + 2].Length));
+                            content[numb + 2].Substring(0, content[numb + 2].Length),
+                            content[numb + 3].Substring(0, content[numb + 3].Length),
+                            content[numb + 4].Substring(0, content[numb + 4].Length));
+                        if (loadKomisje.IdDogadaja == "NULL")
+                        {
+                            loadKomisje.IdDogadaja = null;
+                        }
                         ListaKomisije.Add(loadKomisje);
-                        numb += 3;
+                        numb += 5;
                     }
 
                 }
-            }
+            
             string fileDetaljeKomsije = dirMain + "\\DetaljeKomsije.csv";
-            if (File.Exists(fileKlijent))
+            if (File.Exists(fileDetaljeKomsije))
             {
-
-                using (StreamReader reader = new StreamReader(File.OpenRead(fileKlijent)))
+                using (StreamReader reader = new StreamReader(File.OpenRead(fileDetaljeKomsije)))
                 {
                     string fileContent = reader.ReadToEnd();
                     string[] content = fileContent.Split(',');
                     int numb = 0;
-                    while (content.Length >= numb + 4)
+                    ListaDetaljeKomsije.Clear();
+                    while (content.Length >= numb + 5)
                     {
                         cDetaljeKomisije loadDetaljeKomisije = new cDetaljeKomisije(
                             content[numb + 0].Substring(0, content[numb].Length),
                             content[numb + 1].Substring(0, content[numb + 1].Length),
                             Convert.ToDateTime(content[numb + 2].Substring(0, content[numb + 2].Length)),
                             content[numb + 3].Substring(0, content[numb + 3].Length));
+                        if (content[numb + 4].Substring(0, content[numb + 4].Length) == "NULL")
+                        {
+                                    loadDetaljeKomisije.Rok = Convert.ToDateTime(content[numb + 4].Substring(0, content[numb + 4].Length));
+                        }
                         ListaDetaljeKomsije.Add(loadDetaljeKomisije);
-                        numb += 4;
+                        numb += 5;
                     }
 
                 }
-            }
 
+            string Text="";
             //SHOW
-            foreach(cDetaljeKomisije dk in ListaDetaljeKomsije)
+            foreach (cDetaljeKomisije dk in ListaDetaljeKomsije)
             {
                 int dkKlijentNum = 0;
                 int dkKomisijeNum = 0;
+                
                 foreach (cKlijent k in ListaKlijenta)
                 {
                     if (k.Id == dk.IdKljient) {
@@ -164,10 +183,17 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
                         dkKomisijeNum = ListaKomisije.IndexOf(k);
                     }
                 }
-                Text = ListaKomisije[dkKomisijeNum].ToString() + ListaKlijenta[dkKlijentNum] + dk.Opis;
-            }
-            //rTxtBoxKomisije =;
 
+                if (ListaKomisije[dkKomisijeNum].IdKorisnik == User.Id) {
+                    if (Text != "")
+                    {
+                        Text += "\n\n|\n\n";
+                    }
+                    Text += ListaKomisije[dkKomisijeNum].ToString() + "\n" + ListaKlijenta[dkKlijentNum].ToString() + "\n\tOpis: " + dk.Opis;
+                }
+            }
+            rTxtBoxKomisije.Text = Text;
+            } } }
         }
     }
 }

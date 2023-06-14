@@ -106,6 +106,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.cboxKlijent.Size = new System.Drawing.Size(160, 28);
             this.cboxKlijent.TabIndex = 6;
             this.cboxKlijent.Text = "Novi Klijent";
+            this.cboxKlijent.SelectedIndexChanged += new System.EventHandler(this.cboxKlijent_SelectedIndexChanged);
             // 
             // txtAdressu
             // 

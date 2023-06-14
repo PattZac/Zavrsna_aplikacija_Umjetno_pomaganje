@@ -22,7 +22,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
         }
         public string ToCsvString()
         {
-            string output= IdKomisije+","+IdKljient + "," +DatumNapravljen + "," +opis + ",";
+            string output= IdKomisije + "," + IdKljient + "," +DatumNapravljen + "," +opis + ",";
             if (rok!=null)
             {
                 output += rok + ",";

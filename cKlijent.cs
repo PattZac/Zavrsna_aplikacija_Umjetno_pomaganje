@@ -19,11 +19,11 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
         }
         public string ToCsvString()
         {
-            return Id + "," + Ime + "," + PlatformuKomunikacije + "," + AdresaKomunikacije;
+            return Id + "," + Ime + "," + PlatformuKomunikacije + "," + AdresaKomunikacije+",";
         }
         public override string ToString()
         {
-            return "Ime Klijenta: " + Ime + " | Platformu za komunikaciju: " + PlatformuKomunikacije + " | Adressu klijenta na platformu za komunikaciju: " + AdresaKomunikacije + " | ";
+            return "Ime Klijenta: " + Ime + " | Platformu za komunikaciju: " + PlatformuKomunikacije + " | Adressu klijenta: " + AdresaKomunikacije;
         }
         public string Id { get => id; set => id = value; }
         public string Ime { get => ime; set => ime = value; }

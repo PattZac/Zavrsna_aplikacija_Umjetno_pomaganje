@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBoxOpis = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxTezina = new System.Windows.Forms.TextBox();
+            this.txtBoxIme = new System.Windows.Forms.TextBox();
             this.bntUnos = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -44,7 +44,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.txtBoxOpis);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.Highlight;
@@ -55,17 +55,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Opis Izazov";
             // 
-            // textBox6
+            // txtBoxOpis
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox6.Location = new System.Drawing.Point(20, 50);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(312, 279);
-            this.textBox6.TabIndex = 5;
+            this.txtBoxOpis.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtBoxOpis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxOpis.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtBoxOpis.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtBoxOpis.Location = new System.Drawing.Point(20, 50);
+            this.txtBoxOpis.Multiline = true;
+            this.txtBoxOpis.Name = "txtBoxOpis";
+            this.txtBoxOpis.Size = new System.Drawing.Size(312, 279);
+            this.txtBoxOpis.TabIndex = 5;
             // 
             // label6
             // 
@@ -83,8 +83,8 @@
             this.groupBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtBoxTezina);
+            this.groupBox1.Controls.Add(this.txtBoxIme);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -116,27 +116,27 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Ime Izazov";
             // 
-            // textBox2
+            // txtBoxTezina
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(20, 100);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtBoxTezina.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtBoxTezina.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxTezina.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxTezina.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtBoxTezina.Location = new System.Drawing.Point(20, 100);
+            this.txtBoxTezina.Name = "txtBoxTezina";
+            this.txtBoxTezina.Size = new System.Drawing.Size(221, 20);
+            this.txtBoxTezina.TabIndex = 1;
             // 
-            // textBox1
+            // txtBoxIme
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(20, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtBoxIme.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtBoxIme.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBoxIme.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxIme.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtBoxIme.Location = new System.Drawing.Point(20, 50);
+            this.txtBoxIme.Name = "txtBoxIme";
+            this.txtBoxIme.Size = new System.Drawing.Size(221, 20);
+            this.txtBoxIme.TabIndex = 0;
             // 
             // bntUnos
             // 
@@ -148,6 +148,7 @@
             this.bntUnos.TabIndex = 24;
             this.bntUnos.Text = "Unesi";
             this.bntUnos.UseVisualStyleBackColor = false;
+            this.bntUnos.Click += new System.EventHandler(this.bntUnos_Click);
             // 
             // UnosIzazovi
             // 
@@ -171,13 +172,13 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBoxOpis;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxIme;
         private System.Windows.Forms.Button bntUnos;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBoxTezina;
     }
 }

@@ -131,9 +131,16 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
         internal cKorisnik CurrentKorisnik { get => currentKorisnik; set => currentKorisnik = value; }
         private void bntPrijava_Click(object sender, EventArgs e)
         {
-            CurrentKorisnik = ListaKorsnike[listBoxKorsinike.SelectedIndex];
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            try
+            {
+                CurrentKorisnik = ListaKorsnike[listBoxKorsinike.SelectedIndex];
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Izabraj korisnik iz listu kornsnika, ako nema onda napravite novi i izabraj korsnik","Greška!", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
         }
     }
 }

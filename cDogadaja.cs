@@ -19,6 +19,16 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
         public string Lokacija { get => lokacija; set => lokacija = value; }
         public string IzazovId { get => izazovId; set => izazovId = value; }
 
+        public cDogadaja(string uId, string uIme, DateTime uPocetniDatum, string uOpis, DateTime uKrajniDatum/*, string uLokacija, string uIzazovId*/)
+        {
+            Id = uId;
+            Ime = uIme;
+            PocetniDatum = uPocetniDatum;
+            Opis = uOpis;
+            KrajniDatum = uKrajniDatum;
+            //Lokacija = uLokacija;
+            //IzazovId = uIzazovId;
+        }
         public cDogadaja(string uId, string uIme, DateTime uPocetniDatum, string uOpis, DateTime uKrajniDatum, string uLokacija, string uIzazovId)
         {
             Id = uId;
@@ -30,5 +40,23 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             IzazovId = uIzazovId;
         }
         public cDogadaja() { }
+        public string ToCsvString()
+        {
+            string output = Id + "," + Ime + "," + PocetniDatum + "," + Opis + "," + KrajniDatum + ",";
+            if (Lokacija!=null)
+            {
+                output += Lokacija + ",";
+            }
+            else
+            {
+                output += "NULL,";
+            }
+            if (IzazovId!=null)
+            {
+                output += IzazovId + ",";
+            }
+            else { output += "NULL,"; }
+            return output;
+        }
     }
 }

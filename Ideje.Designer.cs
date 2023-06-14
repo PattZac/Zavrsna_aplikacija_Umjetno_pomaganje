@@ -70,6 +70,7 @@
             this.bntMjenajPrikaz.TabIndex = 27;
             this.bntMjenajPrikaz.Text = "Generiraje novi ideju bez izazova";
             this.bntMjenajPrikaz.UseVisualStyleBackColor = false;
+            this.bntMjenajPrikaz.Click += new System.EventHandler(this.bntMjenajPrikaz_Click);
             // 
             // labelTitle
             // 
@@ -92,6 +93,7 @@
             this.bntNoviKomisiju.TabIndex = 28;
             this.bntNoviKomisiju.Text = "Generiraje novi ideju sa izazova";
             this.bntNoviKomisiju.UseVisualStyleBackColor = false;
+            this.bntNoviKomisiju.Click += new System.EventHandler(this.bntNoviKomisiju_Click);
             // 
             // txtBoxIdeaType
             // 

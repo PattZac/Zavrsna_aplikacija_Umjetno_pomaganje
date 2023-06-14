@@ -48,6 +48,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             this.rTxtBoxDogadaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rTxtBoxDogadaje.Location = new System.Drawing.Point(6, 25);
             this.rTxtBoxDogadaje.Name = "rTxtBoxDogadaje";
+            this.rTxtBoxDogadaje.ReadOnly = true;
             this.rTxtBoxDogadaje.Size = new System.Drawing.Size(363, 365);
             this.rTxtBoxDogadaje.TabIndex = 0;
             this.rTxtBoxDogadaje.Text = "";

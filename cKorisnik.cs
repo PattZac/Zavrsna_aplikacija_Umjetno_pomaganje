@@ -25,7 +25,7 @@ namespace Zavrsna_aplikacija_Umjetno_pomaganje
             }
             else
             {
-                txt += "NULL" + ",";
+                txt += "NULL,";
             }
             return txt;
         }
